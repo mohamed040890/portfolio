@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<nav class="navbar">
+<div class="nav-links">
+<ul>
+    
+<li><a href="#info">Info</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+
+</div>
+<img  src="image/menu-btn.png.png" alt="" class="menu-hamburger">
+
+</nav>
+    </header>
+    <div class="container">
+<div class="info" id="info">
+    <h1>Info</h1>
+    <p>hello I'm Mohamed an apprentice of the web</p>
+</div>
+<div class="skills" id="skills">
+    <h1>Skills</h1>
+    <p>I practice HTML CSS and JS</p>
+</div>
+<div class="contact" id="contact">
+    <h1>Contact</h1>
+    
+<fieldset>
+<form>
+    <h2>Inscrivez-vous</h2>
+    
+    <table>
+        <tr>
+            <td>Nom:</td><td><input type="text" name="name" value=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Adresse:</td><td><input type="text" name="adresse" value=""><br><br></td>
+        </tr>
+        <tr>
+            <td>N° téléphone</td><td><input type="tel" name="tel" value=""><br><br></td>
+        </tr>
+        <tr>
+            <td>Email</td><td><input type="mail" name="email" value=""><br><br></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" id="submit"  name="" value="S'inscrire"></td>
+        </tr>
+    </table>
+</form>
+</fieldset>
+
+</div>
+</div>
+
+</body>
+<footer>
+<div class="carte">
+    <img class="img2" src="image/mars.png" alt="" width="150px" height="150px">
+</div>
+</footer>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
