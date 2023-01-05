@@ -53,10 +53,10 @@
             <td>N° téléphone</td><td><input type="tel" name="tel" value=""><br><br></td>
         </tr>
         <tr>
-            <td>Email</td><td><input type="mail" name="email" value=""><br><br></td>
+            <td>Email</td><td><input type="email" name="email" value=""><br><br></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" id="submit"  name="" value="S'inscrire"></td>
+            <td colspan="2"><input type="submit" id="submit"   value="S'inscrire"></td>
         </tr>
     </table>
 </form>
@@ -64,20 +64,20 @@
 
 </div>
 </div>
-
-</body>
 <footer>
-<div class="carte">
-    <img class="img2" src="image/mars.png" alt="" width="150px" height="150px">
-</div>
-</footer>
+    <div class="carte">
+        <img class="img2" src="image/mars.png" alt="" >
+    </div>
+    </footer>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+    
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
 
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
 
-    menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-    })
-</script>
 </html>
